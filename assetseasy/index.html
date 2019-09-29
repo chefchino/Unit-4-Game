@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
 
-    <link rel= "stylesheet" href= "assetseasy/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Crystal Collector</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="jumbotron">
-        <img src ="assetseasy/images/backgroundCrystal.jpg">
-   <h1>Crystal Collector</h1>
+        <img id="cyrstal" src="images/background.jpg" style="width: 100%;">
+        <div class="wrapper">
+            <h1>Crystal Collector</h1>
 
-   <div class= "container">
-       <p>You will be given a random number at the start of the game.</p>
-       <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-       <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-       <p>The value of each crystal id hidden from you until you click it.</p>
-       <p>Each time the game starts, the value of each crystal changes.</p>
-   </div>
+            <div class="container">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.</p>
+                <p>You win the game by matching your total score to the random number, you lose the game if your total
+                    score goes above the random number.</p>
+                <p>The value of each crystal id hidden from you until you click it.</p>
+                <p>Each time the game starts, the value of each crystal changes.</p>
+            </div>
+        <div class="float">
+            <div class="randomNumber">Random Number Here</div>
+            <div class="winLose">Wins and Loses</div>
+        </div>
+        <div class="scoreboard">
+            <div class="crystals">Crystals here
+                <div id="cry1"></div>
+                <div id="cry2"></div>
+                <div id="cry3"></div>
+                <div id="cry4"></div>
+            </div>
+            <div class="yourScore">
+                <h3>Your total score is:</h3>
+            </div>
+            <div class="totalScore">Total Score</div>
+        </div>
+        </div>
+    </div>
 
-   <div class ="randomNumber">Random Number Here</div>
-   <div class ="winLose">Wins and Loses</div>
-   <div class ="crystals">Crystals here</div>
-   <div class ="yourScore"><h3>Your total score is:</h3></div>
-   <div class ="totalScore">Total Score</div>
-   </div>
-   
 
 
 
 
-    
-    
-  </body>
 
-  </html>
+
+</body>
+
+</html>

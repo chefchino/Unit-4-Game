@@ -3,10 +3,68 @@ body {
 }
 
 .jumbotron{
-    height: 1050px;
-    width:960px;
+    position: relative;
+   
 }
-img{
-    height:100%;
-    width:100%;
+.wrapper{
+    position: absolute;
+    margin-top: 30px;
+    margin-left:10px;
+    background-color: red;
+    width: 600px;
+}
+h1{
+    background-color: orange;
+    width:275px;
+    text-align: center;
+}
+.container{
+    background-color: lightgreen;
+    width:500px;
+    margin: 0 auto;
+}
+p{
+    font-weight: bolder;
+    font-size:18px;
+}
+.float{
+    margin:0 auto;
+    background-color: violet;
+    width: 325px;
+    height:130px;
+  
+}
+.randomNumber{
+    height: 125px;
+    width: 150px;
+    background-color: blue;
+    float:left;
+}
+.winLose{
+    background-color: yellow;
+    height:125px;
+    width: 150px;
+    margin-left:10px;
+    float:left;
+}
+
+.scoreboard{
+    clear:both;
+    background-color: green;
+}
+.crystals{
+    background-color: blue;
+    height: 150px;
+    width: 600px;
+}
+h3{
+    background-color: yellow;
+    width:200px;
+    font-size: 24px;
+}
+.totalScore{
+    height:150px;
+    width:150px;
+    background-color: blue;
+    margin:0 auto;
 }
