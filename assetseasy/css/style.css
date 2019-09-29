@@ -1,0 +1,12 @@
+body {
+    background-color: lightgreen;
+}
+
+.jumbotron{
+    height: 1050px;
+    width:960px;
+}
+img{
+    height:100%;
+    width:100%;
+}
