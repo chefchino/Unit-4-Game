@@ -30,7 +30,11 @@ function reset() {
     numberOption2 = Math.floor(Math.random() * numberOption.length + 1);
     numberOption3 = Math.floor(Math.random() * numberOption.length + 1);
     numberOption4 = Math.floor(Math.random() * numberOption.length + 1);
-
+    $(".randomNumber").html(randomNumber);
+    console.log(numberOption1);
+    $("#wins").html(wins);
+    $("#loses").html(loses);
+    result = 0;
 }
 
 function startGame(){
@@ -39,40 +43,46 @@ $("#cry1").on('click', function() {
     result += numberOption1;
     console.log("result1", result);
     $(".totalScore").html(result);
-    
+    totalScore();
 })
 $("#cry2").on('click', function() {
     result += numberOption2;
     console.log("result2", result);
     $(".totalScore").html(result);
-    
+    totalScore();
 })
 $("#cry3").on('click', function() {
     result += numberOption3;
-    console.log("result3", result);
+    console.log("result3", result, randomNumber);
     $(".totalScore").html(result);
-    
+  
+    totalScore();
 })
 $("#cry4").on('click', function() {
     result += numberOption4;
     console.log("result4", result);
-    $(".totalScore").html(result);
-    
+    $(".totalScore").html( result);
+   console.log(typeof result);
+   totalScore();totalScore();
 })
 
-if (result === randomNumber) {
-    ("Wins : ", wins++);
-    console.log("YOU WON");
-    reset();
+function totalScore(){
+    if (result == randomNumber) {
+        ("Wins : ", wins++);
+        console.log("YOU WON");
+        reset();
+     
+    }
+    else if (result > randomNumber) {
+        ("Loses : ", loses++);
+        console.log("GOT YOU");
+        reset();
+    }
 }
 
-else if (result > randomNumber) {
-    ("Loses : ", loses++);
-    console.log("GOT YOU");
-    reset();
-}
-$("#wins").html(wins);
-$("#loses").html(loses);
+
+
+
 }
 startGame();
 
