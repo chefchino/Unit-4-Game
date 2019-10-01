@@ -12,21 +12,24 @@ var numberOption2 = Math.floor(Math.random() * numberOption.length + 1);
 var numberOption3 = Math.floor(Math.random() * numberOption.length + 1);
 var numberOption4 = Math.floor(Math.random() * numberOption.length + 1);
 
-if (numberOption1 !== numberOption2 !== numberOption3 !== numberOption4)
-{
-    numberOption1 = Math.floor(Math.random() * numberOption.length + 1);
-    numberOption2 = Math.floor(Math.random() * numberOption.length + 1);
-    numberOption3 = Math.floor(Math.random() * numberOption.length + 1);
-    numberOption4 = Math.floor(Math.random() * numberOption.length + 1);
-}
-else {
 
 $("cry1").html(numberOption1);
 $("cry2").html(numberOption2);
 $("cry3").html(numberOption3);
 $("cry4").html(numberOption4);  
-}
-
+// }
+$("#cry1").on('click', function() {
+    
+})
+$("#cry2").on('click', function() {
+    
+})
+$("#cry3").on('click', function() {
+    
+})
+$("#cry4").on('click', function() {
+    
+})
 
 
 console.log("numberOption1",numberOption1);
