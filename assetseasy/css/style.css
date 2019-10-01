@@ -36,11 +36,16 @@ p{
   
 }
 .randomNumber{
-    height: 90px;
+    height: 70px;
     width: 150px;
     background-color: blue;
     float:left;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-top:20px;
 }
+
 .winLose{
     background-color: yellow;
     height:90px;
@@ -52,6 +57,11 @@ p{
 .scoreboard{
     clear:both;
     background-color: green;
+}
+h5{
+    margin-top:0;
+    margin-bottom:4px;
+
 }
 .crystals{
     background-color: blue;
@@ -105,9 +115,13 @@ h3{
     font-size: 24px;
 }
 .totalScore{
-    height:100px;
+    height:80px;
     width:150px;
     background-color: blue;
     margin:0 auto;
     margin-top:20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-top:20px;
 }

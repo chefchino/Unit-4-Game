@@ -1,5 +1,7 @@
 
 var result = 0;
+var wins = 0;
+var loses = 0;
 var randomNumber = Math.floor(Math.random() * 101 + 20);
 // var crystal1 = $("#cry1");
 // var crystal2 = $("#cry2");
@@ -20,38 +22,60 @@ var numberOption4 = Math.floor(Math.random() * numberOption.length + 1);
 $("cry1").html(numberOption1);
 $("cry2").html(numberOption2);
 $("cry3").html(numberOption3);
-$("cry4").html(numberOption4);  
+$("cry4").html(numberOption4); 
 
+function reset() {
+    randomNumber = Math.floor(Math.random() * 101 + 20);
+    numberOption1 = Math.floor(Math.random() * numberOption.length + 1);
+    numberOption2 = Math.floor(Math.random() * numberOption.length + 1);
+    numberOption3 = Math.floor(Math.random() * numberOption.length + 1);
+    numberOption4 = Math.floor(Math.random() * numberOption.length + 1);
 
+}
+
+function startGame(){
 
 $("#cry1").on('click', function() {
     result += numberOption1;
     console.log("result1", result);
     $(".totalScore").html(result);
+    
 })
 $("#cry2").on('click', function() {
     result += numberOption2;
     console.log("result2", result);
     $(".totalScore").html(result);
+    
 })
 $("#cry3").on('click', function() {
     result += numberOption3;
     console.log("result3", result);
     $(".totalScore").html(result);
+    
 })
 $("#cry4").on('click', function() {
     result += numberOption4;
     console.log("result4", result);
     $(".totalScore").html(result);
+    
 })
 
-if (result === randomNumber){
-    alert("YOU WON");
+if (result === randomNumber) {
+    ("Wins : ", wins++);
+    console.log("YOU WON");
+    reset();
 }
-else if 
-    (result > randomNumber) {
-        alert("YOU LOST");
-    }
+
+else if (result > randomNumber) {
+    ("Loses : ", loses++);
+    console.log("GOT YOU");
+    reset();
+}
+$("#wins").html(wins);
+$("#loses").html(loses);
+}
+startGame();
+
 
 
 
