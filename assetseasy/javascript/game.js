@@ -59,13 +59,13 @@ $("#cry4").on('click', function() {
 
 function totalScore(){
     if (result == randomNumber) {
-        ("Wins : ", wins++);
+        ("Wins :", wins++);
         console.log("YOU WON");
         reset();
      
     }
     else if (result > randomNumber) {
-        ("Loses : ", loses++);
+        ("Loses :", loses++);
         console.log("GOT YOU");
         reset();
     }
